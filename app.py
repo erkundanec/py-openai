@@ -42,5 +42,6 @@ def index():
 
     return render_template("index.html", user_prompt="", generated_story="", error_message="")
 
+# This block is necessary for running the app with Gunicorn
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
